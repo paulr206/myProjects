@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Umrechner für verschiedene Zahlensysteme</title>
+  <script src="convert.js" defer></script>
+</head>
+
+<body>
+  <h1>Umwandlung von Dezimalzahlen</h1>
+  <p>Formular zur Umwandlung von Dezimalzahlen ins Binär-, Oktal- oder Hexadezimalsystem.</p>
+  <form>
+    <fieldset>
+      <legend>Umwandlung von Dezimalzahlen</legend>
+      <label for="number">Dezimalzahl</label>
+      <input id="number" type="text" size="10" value="0" autofocus required onkeyup="convert()">
+      <select name="radix" onchange="convert()">
+        <option value="2">Binärsystem</option>
+        <option value="8">Oktalsystem</option>
+        <option value="16" selected>Hexadezimalsystem</option>
+      </select>
+      <label> = <output disabled>0</output></label>
+      <!-- <label> = <input id="output" type="text" disabled></input></label> -->
+    </fieldset>
+  </form>
+</body>
+
+</html>

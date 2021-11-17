@@ -1,0 +1,50 @@
+
+body {
+  font-size:.8em;
+  font-family: arial,sans-serif;
+  padding: 2em;
+  background:#999;
+}
+
+#boundary {
+  border:.5em solid #fff;
+  background:#82d242;
+  float:left;
+  min-height:20em;
+}
+
+button {
+  margin-left: 1em;
+}
+
+#tableContainer {
+  font-size:1em;
+  font-family:arial,sans-serif;
+  width:40em;
+  background:#ccf;
+  padding:1em;
+  height:18em;
+}
+
+a {
+  display: inline-block;
+  color: black;
+  font-weight:bold;
+  margin: 1em;
+}
+
+table, th, td {
+  border-collapse:collapse;
+  border:1px solid #000;
+}
+
+td, th {
+  padding:5px;
+  text-align:left;
+  vertical-align:top;
+}
+
+th {
+  background:#369;
+  color:#fff;
+}
