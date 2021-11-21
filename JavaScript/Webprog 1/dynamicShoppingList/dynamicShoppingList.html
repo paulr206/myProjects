@@ -15,6 +15,7 @@
         color: #666;
       }
     </style>
+    <script src="dynamicShoppingList.js" defer></script>
   </head>
   <body>
 
@@ -31,19 +32,5 @@
 
     </ul>
 
-    <script>
-        const inputButton = document.querySelector("button");
-        let inputText = document.querySelector("input").value;
-        const list = document.querySelector("ul");
-        
-        inputButton.onclick = addToList;
-
-        function addToList() {
-            let name = inputText;
-            console.log(name);
-            inputText = ""
-        }
-
-    </script>
   </body>
 </html>

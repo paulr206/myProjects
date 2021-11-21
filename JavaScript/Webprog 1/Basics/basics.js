@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset="utf-8">
-    <title>JavaScript Grundlagen</title>
-  </head>
-
-  <body>
-    <h1>JavaScript Grundlagen</h1>
-    <script>
     document.writeln("<p>Ein neuer Absatz</p>");
     console.log("Eine Ausgabe in die Konsole");
 
@@ -53,10 +42,3 @@
     document.writeln("<tr><td>CPU</td><td>" + abkuerzungen["cpu"] + "</td></tr>");
     document.writeln("<tr><td>GPU</td><td>" + abkuerzungen["gpu"] + "</td></tr>");
     document.writeln("<tr><td>SoC</td><td>" + abkuerzungen["SoC"] + "</td></tr></table>");
-
-
-
-    </script>
-  </body>
-
-</html>

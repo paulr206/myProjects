@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>DOM Scripting</title>
-  </head>
-  <body>
-    <h1>Heading</h1>
-    <p>Paragraph 1</p>
-    <h2>Subheading</h2>
-    <ul id="myList">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>
-        <a href="http://www.w3.org">W3C</a>
-      </li>
-      <li>Item 4</li>
-    </ul>
-    <p>Paragraph 2</p>
-    <!--<p><img alt="W3C" src="http://www.w3.org/Icons/w3c_main.jpg" /></p>-->
-    <p>Paragraph 3</p>
-    <script>
-      // TODO: Code to access and manipulate the DOM.
+// TODO: Code to access and manipulate the DOM.
 
       //Aufgabe 1
       const myList = document.querySelector("#myList");
@@ -47,7 +25,3 @@
 
       // Aufgabe 6
       //document.body.replaceChild(img, p);
-
-    </script>
-  </body>
-</html>
