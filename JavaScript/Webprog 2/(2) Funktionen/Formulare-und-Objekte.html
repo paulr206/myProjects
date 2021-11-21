@@ -3,33 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <title>Formulare und Objekte</title>
-  <script>
-    // Objekt zur Speicherung der Formulardaten
-  var Katze = {
-    name: "Findus", 
-    besitzer: "Pettersson", 
-    alter: 4, 
-    gewicht: 4.5, 
-    rasse: "Straßenmischung",
-    // Funktion zur Initialisierung des Formulars
-    
-    initForm() {
-      var inputs = document.getElementsByTagName("input");
-      var keys = Object.getOwnPropertyNames(this);
-      keys.pop(); keys.pop();
-      for(i = 0; i < inputs.length; i++) {
-        inputs[i].value = this[keys[i]];
-      }
-    },
-    
-    update(e) {
-      //Katze[this.name] = this.value;
-      Katze[e.target.name] = e.target.value;
-    }
-
-  };
-
-  </script>
+  <script src="Formulare-und-Objekte.js" defer></script>
   <style>
     label { 
       display: block;
@@ -47,17 +21,4 @@
     <label>Rasse:<br><input name="rasse" value=""></label>
   </form>
 </body>
-<script>
-  // Aufruf von initForm nach dem Laden der Webseite
-  window.onload = Katze.initForm();
-  
-  // TODO: Your code goes here...
-  var inputs = document.getElementsByTagName("input");
-  inputs[0].addEventListener("blur", Katze.update);
-  inputs[1].addEventListener("blur", Katze.update);
-  inputs[2].addEventListener("blur", Katze.update);
-  inputs[3].addEventListener("blur", Katze.update);
-  inputs[4].addEventListener("blur", Katze.update);
-
-</script>
 </html>

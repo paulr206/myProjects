@@ -1,32 +1,32 @@
-<!DOCTYPE html>
-<meta charset="utf-8"/>
-<title>OOP mit Konstruktorfunktionen</title>
-<script>
-  // Fügen Sie hier Ihren Code ein:
-  class GeometryObject {
+// Fügen Sie hier Ihren Code ein:
+  // 1.
+  function Point(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+  // 2.
+  Point.prototype.toString = function() {
+    return "Point(" + this.x + "," + this.y + ")";
+  }
+  // 3.
+  Point.prototype.add = function(other) {
+    return new Point((this.x + other.x), (this.y + other.y)); 
+  }
+  // 4. 
+  Point.prototype.isEqualTo = function(other) {
+    if(this.x === other.x && this.y === other.y) {
+      return true
+    }
+    else {
+      return false
+    }
+  }
+  // 5.
+  function GeometryObject() {
 
   }
-  class Point extends GeometryObject{
-    constructor(x,y) {
-      super();
-      this.x = x;
-      this.y = y;
-    }
-    toString() {
-      return "Point(" + this.x + "," + this.y + ")";
-    }
-    add(other) {
-      return new Point((this.x + other.x), (this.y + other.y)); 
-    }
-    isEqualTo(other) {
-      if(this.x === other.x && this.y === other.y) {
-        return true
-      }
-      else {
-        return false
-      }
-    }
-  }
+  // 6.
+  Object.setPrototypeOf(Point.prototype, GeometryObject.prototype);
   
   // Beispiel für die Verwendung:
   var p1 = new Point(3,1);
@@ -45,4 +45,3 @@
   (p1 instanceof GeometryObject) = true
   (p1.constructor === Point) = true
   */
-</script>

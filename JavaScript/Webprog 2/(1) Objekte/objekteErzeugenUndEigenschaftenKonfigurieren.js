@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-
-    <script>
-        //'use strict'
+//'use strict'
         // Aufgabe 1
         var person1 = new Object();
         person1.name = "Greg";
@@ -49,10 +42,3 @@
         person2.size = 1.81;
         console.log(person2.size);
         // ohne strict: undefined - mit strict: 
-    </script>
-
-</head>
-<body>
-    
-</body>
-</html>
