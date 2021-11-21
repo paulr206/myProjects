@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>einfügen</title>
-</head>
-<body>
-
-    <h1>Einfügen</h1>
-    <h2>Liste</h2>
-    <p>Hier unten drunter soll ein Element eingefügt werden</p>
-    <ul>
-        <li>Nummer 1</li>
-        <li>Nummer 2</li>
-        <li>Nummer 3</li>
-    </ul>
-
-
-
-<script>
-    const firstPara = document.querySelector("p");
+const firstPara = document.querySelector("p");
     const secondPara = document.createElement("p");
     secondPara.textContent = "Hier wurde der zweite Paragraph eingefügt";
     firstPara.appendChild(secondPara);
@@ -31,9 +11,3 @@
     if(true){
         thirdLI.style.color = "red";
     }
-    
-
-</script>
-
-</body>
-</html>

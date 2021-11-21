@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<!-- Beispiel für Ereignisverarbeitung, DOM Manipulation, dynamisches Styling und Validierung -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Geheimzahl</title>
+  <style>
+    #error {
+      color: red;
+      display: none;
+    }
+
+    #pin.invalid {
+      border-color: red;
+      border-style: solid;
+    }
+  </style>
+  <script src="geheimzahl.js"></script>
+</head>
+
+<body>
+  <form action="#" method="post" onsubmit="alert('Geheimzahl wird überprüft...')">
+    <p>
+      <label for="pin">Geheimzahl: </label>
+      <input id="pin" type="text" size="6" maxlength="6" title="Die Geheimzahl besteht aus sechs Ziffern von 0 bis 9" />
+      <input id="go" type="submit"/>
+    </p>
+    <div id="error">Die Geheimzahl besteht aus sechs Ziffern von 0 bis 9.</div>
+  </form>
+</body>
+
+</html>
